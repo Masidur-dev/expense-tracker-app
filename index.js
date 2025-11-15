@@ -1,4 +1,24 @@
 
+const state = {
+  earnings: 0,
+  expense: 0,
+  net: 0,
+  transactions: [
+    {
+      id: Math.floor(Math.random() * 1000),
+      text: "Example",
+      amount: 10,
+      type: "credit",
+    },
+  ],
+};
+
+
+
+
+
+
+
 const transactionFormEl = document.getElementById("transactionForm");
 
 const addTransaction = (e) =>{
@@ -19,3 +39,4 @@ const addTransaction = (e) =>{
 }
 
 transactionFormEl.addEventListener("submit", addTransaction)
+
