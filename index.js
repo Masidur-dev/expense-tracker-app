@@ -14,6 +14,19 @@ const state = {
 };
 
 
+ let earning = 0;
+  let expense = 0;
+  let net = 0;
+  transactionContainerEl.innerHTML = "";
+  transactions.forEach((transaction) => {
+    const { id, amount, text, type } = transaction;
+    const isCredit = type === "credit" ? true : false;
+    const sign = isCredit ? "+" : "-";
+
+
+    
+
+
 
 
 
