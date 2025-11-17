@@ -24,7 +24,10 @@ const state = {
     const sign = isCredit ? "+" : "-";
 
 
-    
+     netAmountEl.innerHTML = `₹ ${net}`;
+  earningEl.innerHTML = `₹ ${earning}`;
+  expenseEl.innerHTML = `₹ ${expense}`;
+};
 
 
 
